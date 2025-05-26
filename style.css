@@ -1,70 +1,107 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: floralwhite;
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-}
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: floralwhite;
+     margin: 0;
+     font-family: 'Segoe UI', sans-serif;
+ }
 
-.calculator {
-    background: #1f1f1f;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    width: 320px;
-    border: 1.5px solid white;
-}
+ .calculator {
+     background: #1f1f1f;
+     padding: 20px;
+     border-radius: 16px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+     width: 320px;
+     border: 1.5px solid white;
+ }
 
-#display {
-    width: 95%;
+ #display {
+     width: 95%;
+     height: 50px;
+     font-size: 1.5rem;
+     text-align: right;
+     margin-bottom: 20px;
+     padding: 10px;
+     margin-right: 15px;
+     border: none;
+     border-radius: 10px;
+     background: #414040;
+     color: white;
+
+ }
+
+ .buttons {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 10px;
+ }
+
+ button {
+     padding: 20px;
+     font-size: 1.2rem;
+     border: none;
+     border-radius: 12px;
+     background: #333;
+     color: #fff;
+     cursor: pointer;
+     transition: 0.2s;
+ }
+
+ button:hover {
+     background: #444;
+ }
+
+ button:active {
+     background: #f1e9e9;
+ }
+
+ .operator-btn {
+     background-color: orange;
+ }
+
+ .operator-btn:hover {
+     background-color: rgb(255, 190, 68);
+ }
+
+ .operator-btn:active {
+     background-color: rgb(47, 31, 0);
+ }
+
+
+#mode{
+   
     height: 50px;
-    font-size: 1.5rem;
-    text-align: right;
-    margin-bottom: 20px;
-    padding: 10px;
-    margin-right: 15px;
-    border: none;
-    border-radius: 10px;
-    background: #414040;
-    color: white;
-
+    width: 50px;
+    position: relative;
+    background-color:mintcream;
+    border: 1px solid black;
+    margin-bottom: 38rem;
+    
+}
+ img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+   
+ }
+ body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+body.dark-mode button {
+  background-color: #ffffff;
+  color: #121212;
+}
+body.dark-mode .operator-btn {
+  background-color: #027685;
+  color: #121212;
 }
 
-button {
-    padding: 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 12px;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #444;
-}
-
-button:active {
-    background: #f1e9e9;
-}
-
-.operator-btn {
-    background-color: orange;
-}
-
-.operator-btn:hover {
-    background-color: rgb(255, 190, 68);
-}
-
-.operator-btn:active {
-    background-color: rgb(47, 31, 0);
+#mode:hover{
+    background-color: rgb(255, 215, 192);
 }
